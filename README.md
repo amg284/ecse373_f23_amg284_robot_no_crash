@@ -4,7 +4,7 @@ Run the following commands for ROS setup:
 `source /opt/ros/noetic/setup.bash`  
 `source devel/setup.bash`  
  
-To get the stdr simulator (which is required): `git clone -b noetic-devel https://github.com/cwru-eecs-275/stdr_simulator.git`    
+To get the correct stdr simulator (which is required): `git clone -b noetic-devel https://github.com/cwru-eecs-275/stdr_simulator.git`    
   
 Install all dependencies:   
 Install rosdep: `sudo apt install python3-rosdep`    
@@ -15,5 +15,5 @@ To initialize rosdep: `sudo rosdep init`
 
 To Run...
 Use to make node runnable: `catkin_make robot_no_crash_node`    
-To run: `roslaunch robot_no_crash robot_no_crash.launch &`    
+To run: `roslaunch robot_no_crash launch.launch &`    
 To use another robot, use: `rqt`    
